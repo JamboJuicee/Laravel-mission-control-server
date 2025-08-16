@@ -34,8 +34,10 @@ I choose the second option for this projects.
 1. Create factory: `herd php artisan make:factory AstronautsFactory`
 2. Creating the seeder `herd php artisan make:seeder AstronautSeeder`
 
-3. Now it's time to seed the astronauts: `herd php artisan db:seed`
+3. Now it's time to seed the astronauts: `herd php artisan db:seed --class=AstronautSeeder`
 
+## Creating controllers
+- Add the controllers to manipulate with the server: `herd php artisan make:controller MissionController`
 
 ## Api
 - install api: `herd php artisan install:api`
