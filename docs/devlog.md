@@ -33,3 +33,10 @@ I choose the second option for this projects.
 - To seed astronauts we will use Factory + Faker
 1. Create factory: `herd php artisan make:factory AstronautsFactory`
 2. Creating the seeder `herd php artisan make:seeder AstronautSeeder`
+
+3. Now it's time to seed the astronauts: `herd php artisan db:seed`
+
+
+## Api
+- install api: `herd php artisan install:api`
+- Add appropriate routues: 2 get and 1 post.
