@@ -20,7 +20,7 @@ class AstronautFactory extends Factory
             "id" => $this -> faker -> uuid(),
             "name" => $this -> faker -> name(),
             "endurance" => $this -> faker -> numberBetween(1, 5),
-            "skill" = $this -> faker -> numberBetween(1, 5)
+            "skill" => $this -> faker -> numberBetween(1, 5)
         ];
     }
 }
