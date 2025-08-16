@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MissionController;
+use App\Http\Middleware\ValidateToken;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
