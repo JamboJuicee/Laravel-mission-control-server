@@ -42,3 +42,27 @@ I choose the second option for this projects.
 ## Api
 - install api: `herd php artisan install:api`
 - Add appropriate routues: 2 get and 1 post.
+
+## Validation for the POST method
+1. Create middleware: `herd php artisan make:middleware ValidateToken`
+2. Add api token to the .env file: `API_TOKEN ="THE-UNIVERSE"`
+
+# Time to test it!
+1. For the first 2 routes you should be able to test them by just running empty get request
+2. For the last method, open **Authorization** header and select *Bearer Token*, insert `THE-UNIVERSE`
+- Also don't forget about making body for the request
+
+## Mailing
+- `php artisan make:mail MissionReport`
+1. Change .env file and add mailing parameters
+```
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525 (On howest 587)
+MAIL_USERNAME=sandbox_test_uname
+MAIL_PASSWORD=sandbox_test_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=mission-control@howest.be
+MAIL_FROM_NAME="Mission Control"
+```
+2. Add mission-report blade: `herd php artisan make:view mission-report`
