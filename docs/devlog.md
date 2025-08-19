@@ -66,3 +66,7 @@ MAIL_FROM_ADDRESS=mission-control@howest.be
 MAIL_FROM_NAME="Mission Control"
 ```
 2. Add mission-report blade: `herd php artisan make:view mission-report`
+
+## CORS
+1. Publish cors: `herd php artisan config:publish cors`
+2. Goto /config/cors.php and add the client address (should be localhost:5500) in the allowed origins field.
